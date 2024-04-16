@@ -1,11 +1,598 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+	<meta property="og:description" content="Приглашаем вас на нашу 'Фотиха туй!' ">
+	<meta property="og:image" content="./img/img/s_d_bg_img1.JPG">
+	<link rel="icon" sizes="32x32" href="./img/back_img_1.JPG">
+
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<title>Invitation "Фотиха туй"</title>
+	<script type="module" crossorigin src="/assets/index-b9a8196d.js"></script>
+	<link rel="stylesheet" href="./index.css">
 </head>
-<body>
-    
+
+<body class="relative max-w-[1000px] m-auto">
+
+	<div>
+		<div class="" id="auido_header">
+
+			<img src="https://fabulous-yeot-d53a3d.netlify.app/musicController.svg" id="music_controller"
+				class="fixed top-7 right-7 w-[10%]" alt="">
+
+			<button class="btn_audio">
+				<div class="animate-ping fixed top-7 right-7 p-[5%] rounded-full bg-[#ffff00d1] z-10"></div>
+			</button>
+		</div>
+
+
+		<audio id="player" controls autoplay>
+			<source src="./img/">
+		</audio>
+	</div>
+
+
+
+
+	<style>
+		#auido_header {
+			border: none;
+			height: 0px;
+		}
+
+		#music_controller {
+			z-index: 1;
+		}
+
+		.btn_audio {
+			border: none;
+		}
+
+		#player {
+			display: none;
+		}
+	</style>
+
+	<script>
+		const button = document.querySelector('button');
+		const audioPlayer = document.getElementById('player');
+
+		let isPlaying = false;
+
+		button.addEventListener('click', () => {
+			if (isPlaying) {
+				audioPlayer.pause();
+				isPlaying = false;
+			} else {
+				audioPlayer.play();
+				isPlaying = true;
+			}
+		});
+	</script>
+
+	<!-- <audio id="player" class="" autoplay>
+				<source src="./img/music1.mp3">
+			</audio> -->
+	<div
+		class="absolute left-0 top-32 sm:top-32 md:top-40 bg-no-repeat bg-cover -z-20 bg-[url('./img/smoke2.png')] h-screen w-full ">
+		<div class="absolute -bottom-1 left-0 w-full h-[25%] bg-gradient-to-b from-[#082c2b00] to-[#062f2e] ">
+		</div>
+	</div>
+	<div class="absolute -z-10 left-0 top-0 bg-[#082c2be8] w-full h-full"></div>
+
+	<div class="container fixed top-0 left-0 -z-10">
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-container">
+			<div class="circle"></div>
+		</div>
+	</div>
+
+   
+	<section class="mb-10 sm:mb-20 md:mb-28">
+		<div
+			class="w-full h-[80vh] bg-center bg-cover bg-[url('./img/back_img_1.JPG')] relative flex flex-col items-center justify-end pb-[10%]">
+			<div class="flex flex-col gap-5">
+				<h1 class="h1_text text-[rgb(248,215,86)] text-3xl sm:text-4xl md:text-5xl z-10 font-medium">"ФОТИХА ТУЙ"
+				</h1>
+				<h3 class="text-white text-2xl sm:text-3xl md:text-4xl text-center z-10">08 | 06 | 2024</h3>
+			</div>
+			<div class="absolute -bottom-1 left-0 w-full h-[25%] bg-gradient-to-b from-[#082c2b00] to-[#062f2e] ">
+			</div>
+			<div class="absolute -top-1 left-0 w-full h-[20%] bg-gradient-to-b from-[#062f2ee1] to-[#082c2b00] ">
+			</div>
+			<div class="absolute top-0 left-0 w-[17%] h-full bg-gradient-to-r from-[#062f2ee1] to-[#082c2b00] ">
+			</div>
+			<div class="absolute right-0 top-0 w-[17%] h-full bg-gradient-to-r from-[#082c2b00] to-[#062f2ee1] ">
+			</div>
+
+		</div>
+	</section>
+
+	<section class="mb-20 sm:mb-32 md:mb-40 relative">
+		<p class="text-white text-center text-lg sm:text-xl md:text-2xl font-light mb-10 sm:mb-20 md:mb-28">
+		</p>
+		<img src="./img/strelka.svg" class="tobottom_icon mb-10 animate-bounce h-12 md:h-24" alt="">
+	</section>
+
+	<section class="mt-20 mb-16 sm:mb-24">
+		<div
+			class="relative flex bg-no-repeat bg-[url(./img/ramka1.svg)] bg-cover bg-center flex-col items-center justify-center w-full overflow-hidden h-[140vh] px-10 pt-10">
+		
+			<div class="w-full flex justify-center">
+				<div class="max-w-[400px] sm:max-w-[500px] px-5 mt-5">
+					<p data-aos="fade-up" data-aos-duration="1000"
+						class="sm:text-2xl tracking-widest leading-8 text-white text-center mb-2 sm:mb-5 md:mb-10">
+						Мы нынче счастьем так полны, что им желаем поделиться. Невеста в статусе жены должна впервые появиться. Жених впервые выйдет в свет уже совсем законным мужем, И намечается фуршет, переходящий плавно в ужин. На нашей свадьбе видеть Вас среди гостей мы будем рады Смотрите ниже день и час, а место торжества – там рядом.
+
+					<h1 data-aos="fade-up" data-aos-duration="1000"
+						class="text-[rgb(248,215,86)] text-2xl sm:text-3xl md:text-4xl text-center mb-6 ">С уважением Собир & Дилдора
+					</h1>
+					
+					
+					</p>
+				
+				</div>
+			</div>
+			<div data-aos="fade-up" data-aos-duration="1000" class="flex items-center gap-7 sm:mb-2 md:mb-4">
+				<!-- <p class="text-white leading-9 tracking-widest sm:text-xl md:text-2xl">Месяц</p> -->
+				<h2 class="text-[rgb(248,215,86)] text-5xl text-center sm:text-6xl md:text-7xl">08 </h2>
+				<h2 class="text-[rgb(248,215,86)] text-5xl text-center sm:text-6xl md:text-7xl"> 06</h2>
+				<h2 class="text-[rgb(248,215,86)] text-5xl text-center sm:text-6xl md:text-7xl"> 2024</h2>
+				<!-- <p class="text-white leading-9 tracking-widest text-2xl sm:text-4xl">2024</p> -->
+			</div>
+			<!-- <p data-aos="fade-up" data-aos-duration="1000"
+				class="text-white text-center leading-9 tracking-widest sm:text-2xl md:text-3xl">НАЧАЛО В 12:00</p> -->
+		</div>
+	</section>
+
+
+
+	<!-- <div class="w-40 sm:w-60 m-auto">
+		<img id="logo_img" src="./img/logo_gold_img-removebg-preview.png" alt="">
+		<img class="sm:w-40 m-auto" src="./img/gold_ring-removebg-preview.png" alt="">
+	</div> -->
+
+
+
+	<section class="mt-24 sm:mt-60 md:mt-[100px]">
+		<!-- <div
+			class="w-full h-[90vh] bg-center bg-cover bg-[url('./img/s_d_bg_img2.JPG')] relative flex flex-col items-center justify-end pb-[30%]">
+			<div class="absolute -top-1 left-0 w-full h-[25%] bg-gradient-to-b from-[#082C2B] to-[#082c2b00] ">
+			</div>
+			<div class="absolute -bottom-1 left-0 w-full h-[25%] bg-gradient-to-b from-[#082c2b00] to-[#082C2B] ">
+			</div>
+		</div> -->
+		<div class="text-center uppercase">
+			<div data-aos="fade-up" data-aos-duration="1000" class=" px-5">
+				<h2 class="text-3xl text-[#ffbe33]">Адрес:</h2>
+			</div>
+			<div class="flex flex-col gap-3 items-center mt-10 text-white px-5">
+				<div class="w-full flex justify-center">
+					<div data-aos="fade-up" data-aos-duration="1000" class="max-w-[400px] sm:max-w-[500px] px-5">
+						<p class="sm:text-lg tracking-widest leading-8 text-white text-center">
+							<br>Ресторан
+						</p>
+					</div>
+				</div>
+				<div data-aos="fade-up" data-aos-duration="1000" class="w-1/3 border border-1 sm:my-5"></div>
+				<div class="w-full flex justify-center">
+					<div data-aos="fade-up" data-aos-duration="1000" class="max-w-[400px] sm:max-w-[500px] px-5">
+						<p class="sm:text-lg tracking-widest leading-8 text-white text-center">
+							Самарканд
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="border-b border-t mt-10 py-5 px-5">
+
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3071.3107610602265!2d66.93220786798142!3d39.66522358128784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d19198fcae909%3A0x942414ca29ee3073!2sSULTON%20SAROY!5e0!3m2!1sru!2s!4v1709058725595!5m2!1sru!2s"
+					width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="overflow-hidden">
+		<div class="mt-8">
+
+			<div class="sm:py-20 py-10 flex flex-col items-center justify-center relative">
+				<div
+					class="max-sm:hidden w-full h-[25%] z-10 absolute top-0 left-0 bg-gradient-to-t from-[#082c2b00] to-[#082C2B]">
+				</div>
+
+				<div class="">
+					<p class="text-3xl sm:text-5xl lg:text-6xl text-center text-[#ffbe33]">ДО СКОРОЙ ВСТРЕЧИ!</p>
+				</div>
+				<div class="w-full flex justify-center">
+					<div class="max-w-[400px] sm:max-w-[500px] px-5 mt-5">
+						<p class="text-lg sm:text-2xl md:text-3xl tracking-widest leading-8 text-white text-center">
+							ЕСЛИ У ВАС ВОЗНИКНУТ ВОПРОСЫ, ВЫ МОЖЕТЕ СВЯЗАТЬСЯ С НАШИМ СВАДЕБНЫМ ОРГАНИЗАТОРОМ:
+						</p>
+					</div>
+				</div>
+
+				<div
+					class="max-sm:hidden w-full h-[25%] z-10 absolute bottom-0 left-0 bg-gradient-to-b from-[#082c2b00] to-[#082C2B]">
+				</div>
+			</div>
+
+			<!-- <div class="max-sm:hidden w-full h-[40%] z-10 absolute bottom-0 left-0 bg-gradient-to-b from-[#082c2b00] to-[#082C2B]"></div> -->
+		</div>
+
+		<div class="w-full flex justify-center items-center">
+			<div class="flex max-sm:flex-col sm:items-center sm:gap-10 w-fit">
+				<a href="tel:">
+					<div class="flex items-center gap-5 max-sm:mt-8">
+						<div
+							class="w-11 h-11 flex items-center justify-center rounded-full  bg-gradient-to-br from-yellow-500 to-yellow-200">
+							<svg class="text-[#082C2B]" stroke="currentColor" fill="currentColor" stroke-width="0"
+								viewBox="0 0 16 16" height="23px" width="23px" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd"
+									d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+								</path>
+							</svg>
+						</div>
+						<div class="text-white">
+							<p class="text-sm tracking-wider">телефон:</p>
+							<p class="text-lg tracking-widest"><a href="tel:+998905059005">+998 90 505 90 05</a></p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div class="w-40 sm:w-60 m-auto my-5 text-center">
+			<img src="./img/logo_gold_img-removebg-preview.png" alt="">
+			<img class="sm:w-40 m-auto" src="./img/gold_ring-removebg-preview.png" alt="">
+		</div>
+		<div class="relative h-32 w-[110%] m-auto">
+			<img class="w-full absolute -left-5 sm:-left-7 md:-left-9 bottom-16"
+				src="https://fabulous-yeot-d53a3d.netlify.app/part2.svg" alt="">
+		</div>
+	</section>
+
+	<footer class="bg-white mt-20">
+		<div class="container m-auto px-5 py-5 text-gray-500">
+			<div class="flex flex-col items-center">
+				<div class="w-28 rounded-full overflow-hidden">
+
+				</div>
+				<div class="">
+					<!-- <p>Разработкчик <span class="font-medium">"Собиров Самир"</span></p> -->
+				</div>
+			</div>
+			<div class="sm:flex sm:items-center sm:justify-center sm:gap-10">
+				<div class="mt-8">
+					<p class="text-center">© 2024 Все права защищены</p>
+				</div>
+
+			</div>
+
+			<div id="footer" class=" w-full flex items-center justify-center gap-2 mt-7">
+				<p class="text-center">Разработкчик:</p>
+				<a href="https://www.instagram.com/sobirov1__s/" class="p-[5px] rounded-md">
+					<img src="./img/instagram_icon.svg" alt="" height="30px" width="30px">
+				</a>
+
+				<a href="https://t.me/southpaw9005" class="p-[5px] rounded-md">
+					<img src="./img/telegram_message_icon.svg" alt="" width="30px" height="30px">
+				</a>
+			</div>
+		</div>
+	</footer>
+	</div>
+
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="./script.js"></script>
 </body>
+<script>
+	AOS.init();
+</script>
+
 </html>
